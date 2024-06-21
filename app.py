@@ -6,12 +6,12 @@ def mostrar_pista(pista, ruta=None): #Funcion para mostrar la pista
             if pista[i][j] == 1: # edificio u obstaculo (pit stop)
                 print("x", end=" ") 
             elif pista[i][j] == 2: # agua 
-                print("~", end=" ") #pista
+                print("~", end=" ") 
             elif pista[i][j] == 3: # areas bloqueadas temporalmente (yellow flag)
                 print("#", end=" ")
             elif ruta and (i, j) in ruta: #si la celda forma parte de la ruta (racing line)
                 print("*", end=" ")
-            else: #imprime '.' simboliza la carretera o el camino transitable
+            else: # simboliza la carretera o el camino transitable
                 print(".", end=" ")     
         print()
 
